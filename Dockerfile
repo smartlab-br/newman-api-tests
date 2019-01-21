@@ -1,7 +1,7 @@
 FROM node:5.11.0
 
 # Install app dependencies
-RUN npm install -g newman@beta
+RUN npm install -g newman@4.3.1
 
 RUN mkdir /test
 
