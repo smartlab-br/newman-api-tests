@@ -1,7 +1,11 @@
-FROM node:6.16.0-alpine
+FROM alpine:3.8
 
 # Install app dependencies (newman 4.X is compatible with node 6.X)
-RUN npm install -g newman@4.3.1
+RUN apk add curl
+RUN curl https://deb.nodesource.com/setup_8.x | bash
+
+RUN apk add nodejs
+RUN npm install -g newman
 
 RUN mkdir /test
 
