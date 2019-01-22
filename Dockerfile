@@ -1,6 +1,6 @@
-FROM node:8.15-alpine
+FROM node:6.16.0-alpine
 
-# Install app dependencies
+# Install app dependencies (newman 4.X is compatible with node 6.X)
 RUN npm install -g newman@4.3.1
 
 RUN mkdir /test
