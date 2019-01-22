@@ -4,7 +4,9 @@ FROM alpine:3.8
 # Installing and upgrading nodejs
 RUN apk add nodejs nodejs-npm
 RUN npm install -g n
-RUN n latest
+RUN node --version
+RUN sudo n stable
+RUN node --version
 
 # Instaling and upgrading npm
 RUN npm install -g npm@latest
