@@ -1,7 +1,7 @@
 FROM alpine:3.8
 
 # Install app dependencies (newman 4.X is compatible with node 6.X)
-RUN apk add nodejs-current nodejs-npm bash
+RUN apk add nodejs-current nodejs-npm bash curl find
 RUN npm install -g npm@latest newman@latest
 
 # Creating report dirs
