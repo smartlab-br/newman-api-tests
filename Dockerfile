@@ -1,4 +1,4 @@
-FROM node:8.15
+FROM node:8.15-alpine
 
 # Install app dependencies
 RUN npm install -g newman@4.3.1
