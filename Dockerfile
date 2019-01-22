@@ -1,4 +1,4 @@
-FROM node:5.11.0
+FROM node:8.15
 
 # Install app dependencies
 RUN npm install -g newman@4.3.1
